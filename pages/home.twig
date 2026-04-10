@@ -1,0 +1,12 @@
+{% extends "layout/master.twig" %}
+{% block content %}
+<div class="products">
+{% for product in products %}
+<div class="product">
+<img src="{{ product.image }}">
+<h3>{{ product.name }}</h3>
+<p>{{ product.price }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
